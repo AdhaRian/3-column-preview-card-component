@@ -76,20 +76,17 @@ body {
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 800px;
   margin: 3rem;
 }
 
-.sedans,
-.suvs,
-.luxurys {
+.col {
   padding: 2.5rem 5rem 2.5rem 2.5rem;
 }
 
 .sedans {
-  border-radius: 10px 0px 0px 10px;
   background-color: var(--Brightorange);
 }
 
@@ -98,25 +95,24 @@ body {
 }
 
 .luxurys {
-  border-radius: 0px 10px 10px 0px;
   background-color: var(--Verydarkcyan);
 }
 
-.sedans-learn {
+.sedans-btn {
   color: var(--Brightorange);
 }
 
-.suvs-learn {
+.suvs-btn {
   color: var(--Darkcyan);
 }
 
-.luxurys-learn {
+.luxurys-btn {
   color: var(--Verydarkcyan);
 }
 
 .sedans-learn:hover {
   border: 2px solid white;
-  background-color: var(--Brightorange);
+  background-color: transparent;
   color: white;
   cursor: pointer;
 }
@@ -138,5 +134,25 @@ body {
 @media screen and (max-width: 600px) {
   body {
     background-image: url(./images/pattern-background-mobile.svg);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    display: flex;
+    margin: 3rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .container {
+    display: flex;
+    margin: 3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    margin: 3rem;
   }
 }
