@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+:root {
+  --Brightorange: hsl(31, 77%, 52%);
+  --Darkcyan: hsl(184, 100%, 22%);
+  --Verydarkcyan: hsl(179, 100%, 13%);
+  --Transparentwhite: hsla(0, 0%, 100%, 0.75);
+  --Verylightgray: hsl(0, 0%, 95%);
+  --LexendDeca: "Lexend Deca", sans-serif;
+  --BigShoulder: "Big Shoulders Text", sans-serif;
+}
+
+.attribution {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 11px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+h1 {
+  font-family: var(--BigShoulder);
+  font-size: 30px;
+  color: var(--Transparentwhite);
+  padding-bottom: 1.7rem;
+}
+
+p {
+  color: var(--Transparentwhite);
+  padding-bottom: 5rem;
+}
+
+button {
+  border: none;
+  outline: none;
+  height: 45px;
+  width: 80%;
+  border-radius: 30px;
+  display: inline-block;
+  cursor: pointer;
+  font-family: var(--LexendDeca);
+  font-size: 15px;
+}
+
+img {
+  max-width: 3.5rem;
+  padding-bottom: 1.7rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: var(--LexendDeca);
+  font-size: 15px;
+  background-color: var(--Verylightgray);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+}
+
+.sedans,
+.suvs,
+.luxurys {
+  width: 300px;
+  padding: 2.5rem 5rem 2.5rem 2.5rem;
+}
+
+.sedans {
+  border-radius: 10px 0px 0px 10px;
+  background-color: var(--Brightorange);
+}
+
+.suvs {
+  background-color: var(--Darkcyan);
+}
+
+.luxurys {
+  border-radius: 0px 10px 10px 0px;
+  background-color: var(--Verydarkcyan);
+}
+
+.sedans-learn {
+  color: var(--Brightorange);
+}
+
+.suvs-learn {
+  color: var(--Darkcyan);
+}
+
+.luxurys-learn {
+  color: var(--Verydarkcyan);
+}
+
+.sedans-learn:hover {
+  border: 2px solid white;
+  background-color: var(--Brightorange);
+  color: white;
+  cursor: pointer;
+}
+
+.suvs-learn:hover {
+  border: 2px solid white;
+  background-color: var(--Darkcyan);
+  color: white;
+  cursor: pointer;
+}
+
+.luxurys-learn:hover {
+  border: 2px solid white;
+  background-color: var(--Verydarkcyan);
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url(./images/pattern-background-mobile.svg);
+  }
+}
