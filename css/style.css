@@ -110,21 +110,21 @@ body {
   color: var(--Verydarkcyan);
 }
 
-.sedans-learn:hover {
+.sedans-btn:hover {
   border: 2px solid white;
   background-color: transparent;
   color: white;
   cursor: pointer;
 }
 
-.suvs-learn:hover {
+.suvs-btn:hover {
   border: 2px solid white;
   background-color: var(--Darkcyan);
   color: white;
   cursor: pointer;
 }
 
-.luxurys-learn:hover {
+.luxurys-btn:hover {
   border: 2px solid white;
   background-color: var(--Verydarkcyan);
   color: white;
